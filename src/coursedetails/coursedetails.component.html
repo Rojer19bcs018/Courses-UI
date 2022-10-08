@@ -1,1 +1,7 @@
-<h1>This works fine</h1>
+<h1>Course Details</h1>
+
+<div *ngIf = "Course">
+  <h3>{{ Course.name }}</h3>
+  <h4>{{ Course.price | currency }}</h4>
+  <p>{{ Course.description }}</p>
+</div>
