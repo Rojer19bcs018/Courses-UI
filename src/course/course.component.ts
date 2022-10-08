@@ -8,5 +8,8 @@ import { courses } from './course.model';
 })
 export class CourseClass {
   courses = courses
+  notify(){
+    window.alert("You have choosen the course");
+  }
 }
 
