@@ -4,4 +4,5 @@
   <h3>{{ Course.name }}</h3>
   <h4>{{ Course.price | currency }}</h4>
   <p>{{ Course.description }}</p>
+  <button type="button" (click)="addToCart(Course)">Buy</button>
 </div>
