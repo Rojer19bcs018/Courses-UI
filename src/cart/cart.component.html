@@ -1,1 +1,6 @@
-<p>Hello</p>
+<h3>Cart</h3>
+
+<div *ngFor = "let item of items">
+  {{ item.name }}
+  {{ item.price | currency }}
+</div>
