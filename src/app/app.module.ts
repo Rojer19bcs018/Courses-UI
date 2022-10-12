@@ -7,14 +7,16 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 import { CourseDetails } from '../coursedetails/coursedetails.component';
+import { CartComponent } from '../cart/cart.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, 
     RouterModule.forRoot([
       {path:'',component:CourseClass},
-      {path:'course/:courseid',component:CourseDetails}
+      {path:'course/:courseid',component:CourseDetails},
+      { path: 'cart', component: CartComponent },
     ])],
-  declarations: [AppComponent, HelloComponent, HeaderClass, CourseClass, CourseDetails],
+  declarations: [AppComponent, HelloComponent, HeaderClass, CourseClass, CourseDetails,CartComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
